@@ -13,13 +13,15 @@ public class WebUITasks {
     private static Logger logger = Logger.getLogger(WebUITasks.class);
 
     public static void inputText(String txt, WebDriver driver) throws Exception{
-        WebElement searchInput = findElementByXpath("//input[@name='wd' and @id='kw']",driver);
+//        WebElement searchInput = findElementByXpath("//input[@name='wd' and @id='kw']",driver);
+        WebElement searchInput = findElementByXpath("//input[@type='text']",driver);
         searchInput.sendKeys(txt);
         logger.info("输入查询文本：" + txt);
     }
 
     public static void clickSearchBtn(WebDriver driver) throws Exception{
-        WebElement searchBtn = findElementByXpath("//input[@type='submit' and @id='su']",driver);
+//        WebElement searchBtn = findElementByXpath("//input[@type='submit' and @id='su']",driver);
+        WebElement searchBtn = findElementByXpath("//a[@class='searchBtn']",driver);
         searchBtn.click();
         logger.info("单击查询按钮");
     }

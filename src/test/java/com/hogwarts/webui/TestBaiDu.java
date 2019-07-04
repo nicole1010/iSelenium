@@ -13,14 +13,17 @@ public class TestBaiDu extends WebUIBase {
 
     @Test
     public void baiduSearch() throws Exception{
-        testcaseName = "百度搜索UI自动化测试";
-        String checkString = "selenium";
+//        testcaseName = "百度搜索UI自动化测试";
+        testcaseName = "快看搜索UI自动化测试";
+        String checkString = "十二点";
 
         logger.info("开始运行自动化测试：" + testcaseName);
 
         //浏览器中打开百度
-        logger.info("浏览器中打开百度网站");
-        navigation.to("http://www.baidu.com");
+//        logger.info("浏览器中打开百度网站");
+        logger.info("浏览器中打开快看网站");
+//        navigation.to("http://www.baidu.com");
+        navigation.to("https://www.kuaikanmanhua.com/");
         wait2s();
 
         //输入搜索内容：Selenium
@@ -38,13 +41,16 @@ public class TestBaiDu extends WebUIBase {
     @Test
     public void baiduSearch2() throws Exception{
         testcaseName = "百度搜索UI自动化测试";
-        String checkString = "王者荣耀";
+//        String checkString = "王者荣耀";
+        String checkString = "谷围南亭";
 
         logger.info("开始运行自动化测试：" + testcaseName);
 
         //浏览器中打开百度
-        logger.info("浏览器中打开百度网站");
-        navigation.to("http://www.baidu.com");
+//        logger.info("浏览器中打开百度网站");
+        logger.info("浏览器中打开快看网站");
+//        navigation.to("http://www.baidu.com");
+        navigation.to("https://www.kuaikanmanhua.com/");
         wait2s();
 
         //输入搜索内容：Selenium
