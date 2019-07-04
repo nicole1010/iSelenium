@@ -21,7 +21,7 @@ public class WebUITasks {
 
     public static void clickSearchBtn(WebDriver driver) throws Exception{
 //        WebElement searchBtn = findElementByXpath("//input[@type='submit' and @id='su']",driver);
-        WebElement searchBtn = findElementByXpath("/div/a[@class='searchBtn ']",driver);
+        WebElement searchBtn = findElementByXpath("/a[@class='searchBtn ']",driver);
         searchBtn.click();
         logger.info("单击查询按钮");
     }
