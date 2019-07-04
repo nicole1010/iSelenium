@@ -21,7 +21,7 @@ public class WebUITasks {
 
     public static void clickSearchBtn(WebDriver driver) throws Exception{
 //        WebElement searchBtn = findElementByXpath("//input[@type='submit' and @id='su']",driver);
-        WebElement searchBtn = findElementByXpath("/html/body/div[@id='__nuxt']/div[@id='__layout']/div[@class='bodyContent']/div[@class='Home']/div[@id='HomeHeader']/div[@class='headerContent']/div[@class='navCon cls']/div[@class='SearchBox cls homeType fl']/a[@class='searchBtn ']",driver);
+        WebElement searchBtn = findElementByXpath("/html/body/div[@id='__nuxt']/div[@id='__layout']/div[@class='bodyContent']/div[@class='Home']/div[@id='HomeHeader']/div[@class='headerContent']/div[@class='navCon cls']/div[@class='SearchBox cls homeType fl']/a[@class='searchBtn active']",driver);
         searchBtn.click();
         logger.info("单击查询按钮");
     }
